@@ -1,0 +1,31 @@
+{
+  "name": "d20",
+  "version": "1.0.0",
+  "description": "[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/magnumthetyrant1/d20)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnumthetyrant1/d20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magnumthetyrant1/d20/issues"
+  },
+  "homepage": "https://github.com/magnumthetyrant1/d20#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Free D20 Roller</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Free D20</h1>
+      <div class="main">
+        <h3>How it works:</h3>
+        <p>
+          Roll the dice and press Enter/Return, you can enter any formula. The
+          format is:[# dice]d[# sides] + [modifiers], i.e 2d6+3
+        </p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">D</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Roll the Dice, i.e. 2d6+5"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="d20"
+          />
+        </div>
+        <div class="text-danger" id="text-danger"></div>
+        <div class="alert alert-primary" role="alert">
+          Your rolls will show up here:
+          <div class="output" id="outcome"></div>
+        </div>
+      </div>
+      <div class="footer">&copy; 2020</div>
+    </div>
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
