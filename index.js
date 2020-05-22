@@ -51,16 +51,20 @@ const rollType = () => {
           dieType[i].slice(1),
           Number(d20.substring(mod + 1, d20.length))
         );
+        errorMessage(2);
       } else if (d20.indexOf(dieType[i]) > 0) {
         displayRoll(d20.charAt(0), dieType[i].slice(1), 0);
+        errorMessage(2);
       } else if (d20.includes("+") && d20.indexOf(dieType[i]) == 0) {
         displayRoll(
           1,
           dieType[i].slice(1),
           Number(d20.substring(mod + 1, d20.length))
         );
+        errorMessage(2);
       } else {
         displayRoll(1, dieType[i].slice(1), 0);
+        errorMessage(2);
       }
     }
   }
