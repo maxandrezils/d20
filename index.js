@@ -38,7 +38,7 @@ const displayRoll = (numberOfDice, die, modifiers) => {
 
 const rollType = () => {
   const dieType = ["d4", "d6", "d8", "d10", "d12", "d20"];
-  const d20 = document.getElementById("d20").value;
+  const d20 = document.getElementById("d20").value.toLowerCase();
   if (d20.toLowerCase().indexOf("d") === -1) {
     errorMessage(0);
   }
