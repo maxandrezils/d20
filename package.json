@@ -1,24 +1,37 @@
 {
   "name": "d20",
-  "version": "1.0.0",
-  "description": "[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/magnumthetyrant1/d20)",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/magnumthetyrant1/d20.git"
+  "dependencies": {
+    "vue": "^3.5.25"
   },
-  "author": "Max-Andre Zils",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/magnumthetyrant1/d20/issues"
-  },
-  "homepage": "https://github.com/magnumthetyrant1/d20#readme",
   "devDependencies": {
-    "vite": "^7.1.12"
+    "@playwright/test": "^1.57.0",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/jsdom": "^27.0.0",
+    "@types/node": "^22.19.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.8.1",
+    "jsdom": "^27.2.0",
+    "npm-run-all2": "^8.0.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.6",
+    "vite-plugin-vue-devtools": "^8.0.5",
+    "vitest": "^3.2.4",
+    "vue-tsc": "^3.1.5"
   }
 }
