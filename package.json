@@ -29,7 +29,7 @@
     "jsdom": "^27.3.0",
     "npm-run-all2": "^8.0.4",
     "typescript": "~5.9.3",
-    "vite": "^7.2.7",
+    "vite": "^7.3.5",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.1.8"
